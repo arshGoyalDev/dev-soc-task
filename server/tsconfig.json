@@ -11,6 +11,7 @@
       "@/*": ["./src/*"]
     },
     "outDir": "./dist",
+    "rootDir": "./src",
     "types": [
       "node"
     ],
@@ -18,8 +19,17 @@
     "jsx": "react-jsx",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": false,
+    "sourceMap": false
   },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
   "tsc-alias": {
     "resolveFullPaths": true
   }
