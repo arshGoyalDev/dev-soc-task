@@ -10,6 +10,9 @@ COPY . .
 
 RUN npm run build
 
+ENV PORT=8080
+ENV ORIGIN=http://localhost:3000
+
 EXPOSE 8080
 
 CMD ["npm", "start"]
